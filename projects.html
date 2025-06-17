@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Real-World Applications</title>
+
+  <!-- Bootstrap & Font Awesome CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    .projects-section {
+      padding: 80px 20px;
+      background-color: #f7f9fc;
+      color: #2d3748;
+    }
+
+    .section-title {
+      font-size: 2.8rem;
+      text-align: center;
+      color: #2b6cb0; /* Changed to green like About page */
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 50px;
+    }
+
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      transition: 0.3s ease;
+      overflow: hidden;
+      width: 350px;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 24px;
+    }
+
+    .project-title {
+      font-size: 1.6rem;
+      color: #2b6cb0;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+
+    .project-tech {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 16px;
+    }
+
+    .project-links {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .btn {
+      font-size: 0.95rem;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline {
+      border: 2px solid #2b6cb0;
+      color: #2b6cb0;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background-color: #2b6cb0;
+      color: #fff;
+    }
+
+    .btn-primary {
+      background-color: #3182ce;
+      color: #fff;
+      border: 2px solid #3182ce;
+    }
+
+    .btn-primary:hover {
+      background-color: #2c5282;
+      border-color: #2c5282;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item px-2">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link active" href="projects.html">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Project Section -->
+<section class="projects-section">
+  <div class="container">
+    <h2 class="section-title">My Projects</h2>
+    <p class="section-subtitle">
+      Real-world applications I've developed using Python, Django, HTML, CSS, and more.
+    </p>
+
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1170&q=80" alt="School Listing" class="project-image">
+        <div class="project-info">
+          <h3 class="project-title">School Listing System</h3>
+          <p class="project-description">Custom school profiles, gallery management, admission forms, and an admin dashboard.</p>
+          <ul style="font-size: 0.95rem; color: #444; padding-left: 18px;">
+            <li>Built separate registration features for parents and schools using Python and Django.</li>
+            <li>Designed and styled responsive registration forms with HTML, CSS, and Django templates.</li>
+            <li>Implemented front-end and server-side validations for better data accuracy.</li>
+            <li>Created Django models and views to manage school and parent data with MySQL integration.</li>
+            <li>Handled user feedback with success messages and error alerts for enhanced UX.</li>
+          </ul>
+          <p class="project-tech"><strong>Tech:</strong>Python, Django, SqLite3, HTML, CSS, Js</p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/school-listing" class="btn btn-outline" target="_blank">GitHub</a>
+            <a href="https://schoollisting.live" class="btn btn-primary" target="_blank">Live</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=1200&q=80" alt="Market Hub" class="project-image">
+        <div class="project-info">
+          <h3 class="project-title">Market Hub</h3>
+          <p class="project-description">E-commerce with user login, product browsing, filtering, cart, and admin tools.</p>
+          <ul style="font-size: 0.95rem; color: #444; padding-left: 18px;">
+            <li>Developed a grocery mart web app for managing product inventory and orders.</li>
+            <li>Implemented CRUD operations for adding, updating, and deleting grocery items.</li>
+            <li>Built login and registration with Django’s authentication system for secure access.</li>
+            <li>Ensured front-end and back-end integration using Django, SQL, and JavaScript.</li>
+            <li>Focused on a clean, responsive UI for better user experience across devices.</li>
+          </ul>
+          <p class="project-tech"><strong>Tech:</strong>Python, Django, SqLite3, Html, Css , Js</p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/market-hub" class="btn btn-outline" target="_blank">GitHub</a>
+            <a href="https://markethub.live" class="btn btn-primary" target="_blank">Live</a>
+          </div>
+        </div>
+      </div>
+<!-- Project 3 -->
+<div class="project-card">
+  <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1170&q=80" alt="Fitness Booking API" class="project-image">
+  <div class="project-info">
+    <h3 class="project-title">Fitness Booking API</h3>
+    <p class="project-description">
+      A backend REST API built using Django and DRF for a fitness studio. Users can view classes, book slots, and track bookings via email. Includes timezone support, validations, logging, and Postman-tested endpoints.
+    </p>
+    <ul class="project-features">
+      <li>🔹 <strong>GET /classes</strong> – List classes</li>
+      <li>🔹 <strong>POST /book</strong> – Book a slot</li>
+      <li>🔹 <strong>GET /bookings</strong> – View bookings</li>
+    </ul>
+    <p class="project-tech"><strong>Tech:</strong> Django, DRF, SQLite, Postman</p>
+    <div class="project-links">
+      <a href="https://github.com/yourusername/fitness-booking-api" class="btn btn-outline" target="_blank">GitHub</a>
+      <a href="https://loom.com/share/your-loom-id" class="btn btn-primary" target="_blank">Loom Video</a>
+    </div>
+  </div>
+</div>
+
+
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer mt-auto py-4 bg-dark text-white">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h5>About</h5>
+        <p style="font-size: 14px;">
+          I'm a passionate developer focused on building scalable and user-friendly applications.
+          Reach out to collaborate or learn more about my work.
+        </p>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled" style="font-size: 14px;">
+          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="projects.html" class="text-white text-decoration-none">Projects</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Follow Me</h5>
+        <a href="https://github.com/jogikiran" target="_blank" class="text-white me-3"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/jogi-kiran-kumar-1a872b265" target="_blank" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:jogikiranjogikiran@gmail.com" class="text-white"><i class="fas fa-envelope fa-lg"></i></a>
+      </div>
+    </div>
+    <hr class="bg-secondary my-4">
+    <p class="mb-0" style="font-size: 13px;">&copy; 2025 Jogi Kiran Kumar. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

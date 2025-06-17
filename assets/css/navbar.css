@@ -1,0 +1,78 @@
+/* General Body Styling
+
+/* Custom Navbar Styling */
+.custom-navbar {
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6); /* Blue gradient */
+  padding: 12px 30px;
+  transition: background 0.3s ease;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Brand Logo */
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #e2e8f0 !important;
+  font-weight: 500;
+  position: relative;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: calc(100% - 24px);
+}
+
+/* Auth Buttons */
+.btn-outline-light {
+  border: 1px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #1e3a8a;
+}
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    gap: 0;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-item {
+    padding-bottom: 10px;
+  }
+
+  .navbar-text {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+}
